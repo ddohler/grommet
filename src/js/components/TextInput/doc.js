@@ -19,6 +19,14 @@ export const doc = TextInput => {
     a11yTitle: PropTypes.string.description(
       'Custom title to be used by screen readers.',
     ),
+    defaultSuggestion: PropTypes.number.description(
+      `Index of the suggestions array that should be highlighted when the drop
+      appears.  Default behavior if this property is unset is not to highlight
+      any suggestions when the drop appears.
+
+      This number is an index into the suggestions array, so it is
+      zero-indexed.`,
+    ),
     dropAlign: PropTypes.shape({
       top: PropTypes.oneOf(['top', 'bottom']),
       bottom: PropTypes.oneOf(['top', 'bottom']),

@@ -19,6 +19,19 @@ Custom title to be used by screen readers.
 string
 ```
 
+**defaultSuggestion**
+
+Index of the suggestions array that should be highlighted when the drop
+      appears.  Default behavior if this property is unset is not to highlight
+      any suggestions when the drop appears.
+
+      This number is an index into the suggestions array, so it is
+      zero-indexed.
+
+```
+number
+```
+
 **dropAlign**
 
 How to align the drop. Defaults to `{
